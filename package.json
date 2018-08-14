@@ -1,0 +1,36 @@
+{
+  "name": "endpoints-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/backEnd/index.js",
+    "watch:server": "NODE_ENV=development nodemon -x 'npm start'",
+    "watch:client": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahenazmonia/endpoints-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahenazmonia/endpoints-starter/issues"
+  },
+  "homepage": "https://github.com/shahenazmonia/endpoints-starter#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-meteor": "^7.0.0-rc.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.3",
+    "webpack": "^4.16.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "eslint": "^4.0.0",
+    "eslint-plugin-react": "^7.1.0"
+  }
+}
