@@ -1,3 +1,4 @@
 node_modules
-js/bundle
+bundle.js
 .env
+/js/*
