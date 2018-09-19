@@ -1,9 +1,9 @@
 import React from 'react';
-import Login from './login';
+import Signup from './containers/signup';
 const App = () => {
 
   return(
-    <Login> </Login>
+    <Signup> </Signup>
   );
 };
 
