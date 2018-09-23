@@ -33,4 +33,5 @@ const dbConfig = (env) => {
 module.exports = {
   DB_CONFIG: dbConfig(process.env.NODE_ENV),
   USER_COOKIE: 'user_id',
+  secret: process.env.SECRET
 };

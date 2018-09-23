@@ -10,10 +10,6 @@ const Users = sequelize.define('users',{
     type: Sequelize.STRING,
     allowNull: false
   },
-  role : {
-    type: Sequelize.STRING,
-    allowNull: true
-  },
   image: {
     type: Sequelize.STRING,
     allowNull: true
