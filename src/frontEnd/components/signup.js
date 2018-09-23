@@ -38,43 +38,40 @@ class Signup extends Component{
     console.log('user', fetchUser, user);
     return (
       <div className="container" >
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmit} className='signupForm'>
           <hgroup>
             <h2>Regestration</h2>
           </hgroup>
+          <input
+            type="text"
+            placeholder="Name"
+            required
+            value={this.state.name}
+            name='name'
+            onChange={this.handleInput}
+          />
+          <input
+            type="email"
+            placeholder="username"
+            required
+            value={this.state.username}
+            name='username'
+            onChange={this.handleInput}
 
-          <fieldset>
-            <input
-              type="text"
-              placeholder="Name"
-              required
-              value={this.state.name}
-              name='name'
-              onChange={this.handleInput}
-            />
-            <input
-              type="email"
-              placeholder="username"
-              required
-              value={this.state.username}
-              name='username'
-              onChange={this.handleInput}
-
-            />
-            <input type="password"
-              placeholder="password"
-              required value={this.state.password}
-              name='password'
-              onChange={this.handleInput}
-            />
-            <input type="password"
-              placeholder="confirm password"
-              required
-              value={this.state.confirmPassword}
-              name='confirmPassword'
-              onChange={this.handleInput}
-            />
-          </fieldset>
+          />
+          <input type="password"
+            placeholder="password"
+            required value={this.state.password}
+            name='password'
+            onChange={this.handleInput}
+          />
+          <input type="password"
+            placeholder="confirm password"
+            required
+            value={this.state.confirmPassword}
+            name='confirmPassword'
+            onChange={this.handleInput}
+          />
 
           <button type="submit"> Add client
           </button>
