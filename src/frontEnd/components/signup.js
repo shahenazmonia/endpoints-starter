@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDom from 'react-dom';
+import {Link} from 'react-router-dom';
 import reactSpinners from 'react-spinners';
 class Signup extends Component{
   constructor (props){
@@ -75,6 +76,7 @@ class Signup extends Component{
 
           <button type="submit"> Add client
           </button>
+          <Link to={'/login'}> Have an account? </Link>
         </form>
       </div>
     );
