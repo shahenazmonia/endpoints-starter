@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-
+import {Link} from 'react-router-dom';
 class Login extends Component{
 
   constructor(props){
@@ -33,21 +33,25 @@ class Login extends Component{
       login
     }= this.props;
     return(
-      <form onSubmit= {this.onSubmit}>
-        <input placeholder='username'
-          type='text'
-          required
-          value={this.state.name}
-          name='username'
-          onChange={this.handleInput} />
-        <input placeholder='password'
-          type='password'
-          required
-          value= {this.state.password}
-          name='password'
-          onChange={this.handleInput} />
-        <button type='submit'> Login </button>
-      </form>
+      <div className='container'>
+        <form onSubmit= {this.onSubmit} className='loginForm'>
+          <h2> Login Form </h2>
+          <input placeholder='username'
+            type='text'
+            required
+            value={this.state.name}
+            name='username'
+            onChange={this.handleInput} />
+          <input placeholder='password'
+            type='password'
+            required
+            value= {this.state.password}
+            name='password'
+            onChange={this.handleInput} />
+          <button type='submit'> Login </button>
+          <Link to = {'/signup'}> create an account  </Link>
+        </form>
+      </div>
     );
 
   }
