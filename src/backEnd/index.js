@@ -5,7 +5,6 @@ const  {sequelize} = require('../database/models/');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const router = require('./router');
-
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(cookieParser('secret'));
