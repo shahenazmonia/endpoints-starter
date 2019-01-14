@@ -26,7 +26,7 @@ export const signup = (req, res) =>{
             t.rollback();
           });
       }).catch(()=>{
-        return res.status(500).json({err: 'error in query'});
+        return res.status(500).json({err: 'error in the query'});
       });
     });
 };
